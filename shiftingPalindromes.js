@@ -1,8 +1,8 @@
-console.log('Test 1');
+console.log('Test 1', 'racecar');
 shiftingPalindrome('racecar');
-console.log('Test 2');
+console.log('Test 2','suhbeusheff');
 shiftingPalindrome('suhbeusheff');
-console.log('Test 3');
+console.log('Test 3', 'palindrome');
 shiftingPalindrome('palindrome');
 
 function shiftingPalindrome(str){
@@ -23,7 +23,7 @@ function shiftingPalindrome(str){
         else if(singleLetterFound == true && letter != singleLetter){
           isPalindrome = false;
         }
-      }  
+      }
     }
     console.log(isPalindrome);
 }
