@@ -6,15 +6,11 @@ console.log('Test 3');
 shiftingPalindrome('palindrome');
 
 function shiftingPalindrome(str){
-    var isEven = false;
     var singleLetterFound = false;
     var singleLetter = '';
     var isPalindrome = true;
     
     var strLength = str.length;
-    if ((strLength % 2) == 0 ){
-      isEven = true;
-    }
     for (var i = 0 ; i < strLength ; i++){
       let letter = str.charAt(i);
       let result = ((str.match( new RegExp(letter, 'g') ) || []).length);
